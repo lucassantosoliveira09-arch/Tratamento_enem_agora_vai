@@ -8,7 +8,7 @@ OBS1: puxe a pasta "imagens-convertidas" do passo 1 para essa pasta do passo 2
 
 OBS2: abra a imagem no GIMP e conte pixels para saber quanto de borda tem que cortar.
 
-OBS3: atualize a linha 33 com os valores corretos de corte (esquerda, superior, direita, inferior)
+OBS3: atualize a linha 33 com os valores corretos de corte (esq uerda, superior, direita, inferior)
 
 OBS4: tenha em mente desde já que você vai usar as imagens futuramente, então corte pensando na melhor maneira para executar todos os 12 passos
 
@@ -30,7 +30,7 @@ for nome_arquivo in os.listdir(pasta_imagens):
 
         largura, altura = imagem.size
 
-        caixa_corte = (276, 390, largura - 276, altura - 280) # ATUALIZE AQUI OS VALORES DE CORTE (esquerda, superior, direita, inferior)
+        caixa_corte = (251  , 295, largura - 252, altura - 227) # ATUALIZE AQUI OS VALORES DE CORTE (esquerda, superior, direita, inferior)
         imagem_cortada = imagem.crop(caixa_corte)
 
         caminho_saida = os.path.join(pasta_saida, nome_arquivo)
